@@ -1,7 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <table>
 <?php
-   phpinfo();
-    //주석
-/*
-*/
-    print "안녕하세요 저는  입니다";
-?>
+    foreach ($result as $row) {
+                ?>
+
+                <tr>
+                <form action="del.php" method="post">
+                <input type="hidden" value=<?=$row['idx']?>>
+                <td><?=$row['name']?></td>
+                <td><?=$row['id']?></td>
+                <td><button>삭제</button></td>
+                </form>
+            </tr>
+            
+            <?php
+            ?>
+            
+        </table>
+    </table>
+    </body>
+</html>
