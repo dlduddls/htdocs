@@ -9,13 +9,12 @@
         <title></title>
     </head>
     <body>
-        <form method="post" enctype="multipart/form-data">
+        <form action="fup.php" method="post" enctype="multipart/form-data">
             <label for="f">첨부파일
                 <input type="file" name="up" id="f">
                 <input type="submit" value="올리기">
-                
-            
-            
-        </form>
+            </form>
+        
     </body>
 </html>
+
